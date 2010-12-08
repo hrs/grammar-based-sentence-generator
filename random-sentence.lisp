@@ -1,5 +1,5 @@
 ;;; Author: Harry Schwartz
-;;; Last Edited: Dec. 1, 2008
+;;; Last Edited: Dec. 2010
 
 ;;; Formatting functions:
 
@@ -40,5 +40,4 @@
 (defun sentence (gram-file)
   "Takes the name of a grammar file and creates a sentence."
   (with-open-file (stream gram-file)
-    (let ((replace-table (read stream)))
-      (clean-string-tree (derive "S" replace-table)))))
+      (clean-string-tree (derive "S" (read stream)))))
