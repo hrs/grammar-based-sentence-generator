@@ -1,8 +1,8 @@
 Author: Harry Schwartz
-Date: Nov. 2, 2007
+Date: Dec. 2010
 
 To generate a random sentence, fire up a Lisp interpreter, load "random-sentence.lisp", and execute
 
-(sentence 'grammar.gram)
+(sentence 'grammar.lisp)
 
 Repeat as desired.
